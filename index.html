@@ -1,0 +1,39 @@
+<!doctype html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- CSS only -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="style.css">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Position Cal</title>
+</head>
+<body>
+
+  <section class="section-cal">
+    <div class="container cal-box">
+      <div class="cal">
+        <h1 class="primary">Position Size Calculator</h1>
+        <div class="cal-fields">
+        Enter Capital <input id="capital" class="field" type="number">
+        Risk (eg - 0.05 for 5%) <input id="risk" class="field" type="number">
+        Entry price <input id="entry" class="field" type="number">
+        Stoploss <input id="stoploss" class="field" type="number">
+  
+        <button id="calculate" class="btn btn-primary calculate">Calculate</button>
+          </div>
+        <h2 class="red" id="pSize"></h2>
+      </div>
+  
+    </div>
+  
+  </section>
+  
+  <script src="script.js"></script>
+</body>
+</html>
+
+
+

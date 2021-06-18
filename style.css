@@ -1,0 +1,35 @@
+.field {
+  display: block;
+  margin-bottom: 20px;
+}
+
+.primary{
+  margin-bottom: 20px;
+  text-align:center;
+}
+
+.section-cal{
+  background-color:#9CFFD9;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+}
+.cal-box{
+  display:flex;
+  justify-content: center;
+}
+
+.cal-fields{
+  margin:0 auto;
+  max-width: 183px;
+}
+.calculate{
+  width:100%
+}
+
+.red{
+  margin-top:20px;
+  text-align:center;
+}
+
+
