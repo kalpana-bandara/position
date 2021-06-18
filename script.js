@@ -10,18 +10,27 @@ getTotal.addEventListener("click", calculatePosition);
 
 function calculatePosition() {
   if (!capital.value || !risk.value || !entry.value || !stopLoss.value) {
+
     pSize.style.color = "red"
     pSize.innerHTML = "What The Fuck?<br> Fill The Details First";
+
   } else {
-    let x = +capital.value * +risk.value;
+
+    let percentRisk = risk.value/100;
+    let x = +capital.value * +percentRisk;
     let y = +entry.value - +stopLoss.value;
+
     if(entry.value< stopLoss.value){
        guess = 'Short'
+
     }else{
+
        guess = 'Long'
+
     }
     let z = x / y;
     let total = z * +entry.value;
+
     total = Math.abs(Math.round(total))
     
     pSize.style.color = "green"
