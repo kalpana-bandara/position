@@ -11,7 +11,7 @@ getTotal.addEventListener("click", calculatePosition);
 function calculatePosition() {
   if (!capital.value || !risk.value || !entry.value || !stopLoss.value) {
     pSize.style.color = "red"
-    pSize.innerText = "What The Fuck? Fill The Details First";
+    pSize.innerHTML = "What The Fuck?<br> Fill The Details First";
   } else {
     let x = +capital.value * +risk.value;
     let y = +entry.value - +stopLoss.value;
