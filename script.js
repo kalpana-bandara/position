@@ -12,11 +12,14 @@ function calculatePosition() {
   if (!capital.value || !risk.value || !entry.value || !stopLoss.value) {
 
     pSize.style.color = "red"
-    pSize.innerHTML = "What The Fuck?<br> Fill The Details First";
+    pSize.innerHTML = "Fill The Details First!";
 
   } else {
 
     let percentRisk = risk.value/100;
+    if(percentRisk > 0.25){
+      swal("Seriously!","Try To Use Low Risk")
+    }
     let x = +capital.value * +percentRisk;
     let y = +entry.value - +stopLoss.value;
 
