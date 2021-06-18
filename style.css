@@ -10,9 +10,10 @@
 }
 
 .section-cal{
-  padding-top: 200px;
   background-color:#9CFFD9;
   height: 100vh;
+  display: flex;
+  align-items: center;
 }
 .cal-box{
   display:flex;
