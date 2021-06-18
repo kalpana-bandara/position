@@ -10,21 +10,14 @@
 }
 
 .section-cal{
+  padding-top: 200px;
   background-color:#9CFFD9;
   height: 100vh;
-  display: flex;
-  align-items: center;
 }
 .cal-box{
   display:flex;
   justify-content: center;
 }
-
-.cal{
-  position: relative;
-}
-
-
 .calculate{
   width:100%
 }
