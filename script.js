@@ -16,15 +16,15 @@ function calculatePosition() {
     let x = +capital.value * +risk.value;
     let y = +entry.value - +stopLoss.value;
     if(entry.value< stopLoss.value){
-       guess = 'short'
+       guess = 'Short'
     }else{
-       guess = 'long'
+       guess = 'Long'
     }
     let z = x / y;
     let total = z * +entry.value;
     total = Math.abs(Math.round(total))
     
     pSize.style.color = "green"
-    pSize.innerText = "Your position size is : " + total + '. Good luck with your ' + guess
+    pSize.innerHTML = "Your position size is : " + total + ' USDT'+ '<br> Good Luck With Your ' + guess
   }
 }
