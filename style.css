@@ -1,5 +1,6 @@
 .field {
   display: block;
+  width: 100%;
   margin-bottom: 20px;
 }
 
@@ -19,10 +20,7 @@
   justify-content: center;
 }
 
-.cal-fields{
-  margin:0 auto;
-  max-width: 183px;
-}
+
 .calculate{
   width:100%
 }
@@ -31,5 +29,4 @@
   margin-top:20px;
   text-align:center;
 }
-
 
