@@ -18,7 +18,7 @@ function calculatePosition() {
 
     let percentRisk = risk.value/100;
     if(percentRisk > 0.25){
-      swal("Seriously!","Dont Risk Too Much, Serious Traders only risk 1% - 5%", "warning")
+      swal("Seriously!","Serious Traders only risk 1% - 5%", "warning")
     }
     let x = +capital.value * +percentRisk;
     let y = +entry.value - +stopLoss.value;
